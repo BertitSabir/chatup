@@ -2,11 +2,12 @@
 name = "chatup"
 version = "0.1.0"
 description = ""
-authors = ["sabir.bertit <s.bertit.ext@axione.fr>"]
+authors = ["SBT <sabir-bertit@hotmail.fr>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+reflex = "^0.4.8.post1"
 
 
 [build-system]
