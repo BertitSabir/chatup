@@ -25,6 +25,18 @@ const pulse = keyframes`
 `
 
 
+export function Debounceinput_e9472230189b2fe622d5cdf211cd0a15 () {
+  const state__chat_state = useContext(StateContexts.state__chat_state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_change_0b9e62c5c644a091298e2cd518fd520b = useCallback((_e0) => addEvents([Event("state.chat_state.set_question", {value:_e0.target.value})], (_e0), {}), [addEvents, Event])
+
+
+  return (
+    <DebounceInput css={{"borderWidth": "1px", "padding": "1em", "boxShadow": "rgba(0, 0, 0, 0.15) 0px 2px 8px"}} debounceTimeout={300} element={RadixThemesTextField.Input} onChange={on_change_0b9e62c5c644a091298e2cd518fd520b} placeholder={`Ask a question`} value={state__chat_state.question}/>
+  )
+}
+
 export function Fragment_cb5edf864ed730e6ef1545318d0da5a2 () {
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -43,19 +55,7 @@ export function Fragment_cb5edf864ed730e6ef1545318d0da5a2 () {
   )
 }
 
-export function Debounceinput_e9472230189b2fe622d5cdf211cd0a15 () {
-  const state__chat_state = useContext(StateContexts.state__chat_state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_change_0b9e62c5c644a091298e2cd518fd520b = useCallback((_e0) => addEvents([Event("state.chat_state.set_question", {value:_e0.target.value})], (_e0), {}), [addEvents, Event])
-
-
-  return (
-    <DebounceInput css={{"borderWidth": "1px", "padding": "1em", "boxShadow": "rgba(0, 0, 0, 0.15) 0px 2px 8px"}} debounceTimeout={300} element={RadixThemesTextField.Input} onChange={on_change_0b9e62c5c644a091298e2cd518fd520b} placeholder={`Ask a question`} value={state__chat_state.question}/>
-  )
-}
-
-export function Box_766f92e77c101bce5e4cf9b3815c1522 () {
+export function Box_1391e2766331575586e0cc0bdddb53e0 () {
   const state__chat_state = useContext(StateContexts.state__chat_state)
 
 
@@ -135,7 +135,7 @@ export default function Component() {
 </Fragment>
   <RadixThemesFlex css={{"display": "flex", "alignItems": "center", "justifyContent": "center"}}>
   <RadixThemesFlex align={`center`} direction={`column`} gap={`2`}>
-  <Box_766f92e77c101bce5e4cf9b3815c1522/>
+  <Box_1391e2766331575586e0cc0bdddb53e0/>
   <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
   <Debounceinput_e9472230189b2fe622d5cdf211cd0a15/>
   <Button_abd8c133ee2296ba55334fb274f51c0c/>

@@ -3,11 +3,13 @@ name = "chatup"
 version = "0.1.0"
 description = ""
 authors = ["SBT <sabir-bertit@hotmail.fr>"]
-readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
 reflex = "^0.4.8.post1"
+openai = "^1.25.0"
+python-decouple = "^3.8"
 
 
 [build-system]
